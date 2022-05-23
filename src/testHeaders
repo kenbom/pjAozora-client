@@ -1,0 +1,15 @@
+atIndexReqHeader:{"host":"localhost:4000","content-type":"application/json","origin":"http://localhost:3000","accept-encoding":"gzip, deflate","connection":"keep-alive","accept":"*/*","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15","referer":"http://localhost:3000/","content-length":"198","accept-language":"ja"}
+atIndexAuth:undefined
+aferReceiveFromIndex:undefined
+afterGetUserFT:null
+
+///////below came out from Safari
+atIndexReqHeader:{"host":"localhost:4000","origin":"http://localhost:3000","content-type":"application/json","accept-language":"ja","accept-encoding":"gzip, deflate","connection":"keep-alive","accept":"*/*","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15","authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjI1LCJpYXQiOjE2NTIxNTQ0MzUsImV4cCI6MTY1NTc1NDQzNX0.nAkGAiHpP9ZH80zqeTHm-Kmpq9QGo2QH2aVo8iNy9uM","referer":"http://localhost:3000/","content-length":"448"}
+atIndexAuth:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjI1LCJpYXQiOjE2NTIxNTQ0MzUsImV4cCI6MTY1NTc1NDQzNX0.nAkGAiHpP9ZH80zqeTHm-Kmpq9QGo2QH2aVo8iNy9uM
+aferReceiveFromIndex:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjI1LCJpYXQiOjE2NTIxNTQ0MzUsImV4cCI6MTY1NTc1NDQzNX0.nAkGAiHpP9ZH80zqeTHm-Kmpq9QGo2QH2aVo8iNy9uM
+afterGetUserFT:[object Object]
+atResolver:25
+inputAtResolver:45678
+
+///////below came out from Chrome
+atIndexReqHeader: { "host": "localhost:4000", "connection": "keep-alive", "content-length": "452", "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"101\", \"Google Chrome\";v=\"101\"", "authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQwODQ4MjY4LCJqdGkiOiJlMTVjZjVjNGYzMWQ0NDFiOTY4YjU0NWFiNzg2NzM2OCIsInVzZXJfaWQiOjN9.kEhl6Vxy8ccXzxpied5C1EBDHH7yO2iP_pQkEIGBueg", "content-type": "application/json", "sec-ch-ua-mobile": "?0", "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36", "sec-ch-ua-platform": "\"macOS\"", "accept": "*/*", "origin": "http://localhost:3000", "sec-fetch-site": "same-site", "sec-fetch-mode": "cors", "sec-fetch-dest": "empty", "referer": "http://localhost:3000/", "accept-encoding": "gzip, deflate, br", "accept-language": "ja,en-US;q=0.9,en;q=0.8" }
