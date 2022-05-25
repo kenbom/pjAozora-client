@@ -2,7 +2,9 @@ import { IncomingMessage, ServerResponse } from 'http'
 import httpProxy from "http-proxy" 
 
 // const target = "https://api.exchangeratesapi.io/"
-const target = 'https://git.heroku.com/pjaozora-server.git:4000/'
+// const target = 'https://git.heroku.com/pjaozora-server.git:4000/'
+// const target = "https://graphql.org/swapi-graphql"
+const target = "http://localhost:4000"
 const proxy = httpProxy.createProxyServer({ target, changeOrigin: true });
 
 export default async function handler(req: IncomingMessage, res: ServerResponse) {
