@@ -13,7 +13,9 @@ import { queryKeys } from "../../../config/queryKeys";
 import { useSeisanHyou } from "./useSeisanHyou";
 
 type ShiwakeId = {
+    input:{
     shiwakeId: string,
+    }
 }
 
 async function setSeisanHyouSakujo(input: ShiwakeId) {
