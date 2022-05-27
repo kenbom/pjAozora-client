@@ -20,13 +20,13 @@ import { ShiwakeUnselected } from "./ShiwakeUnselected";
 // import type { Tekiyou } from "../../store/strdStates";
 
 export type ShiwakeInput = {
-  hasseiDate: string;
+  hasseiDate: string | undefined;
   tekiyou: string | undefined;
-  kariCd: number;
-  kariName: string;
+  kariCd: number | undefined;
+  kariName: string | undefined;
   kariKingaku: number | undefined;
-  kashiCd: number;
-  kashiName: string;
+  kashiCd: number | undefined;
+  kashiName: string | undefined;
   kashiKingaku: number | undefined;
 };
 

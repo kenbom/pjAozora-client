@@ -11,11 +11,13 @@ import type { ShiwakeInput } from "../ShiwakeTouroku";
 import type { Shiwakes } from "../../seisanHyou/hooks/useSeisanHyou";
 import { queryKeys } from "../../../config/queryKeys" 
 import {useSeisanHyou} from "../../seisanHyou/hooks/useSeisanHyou"
+import Router from "next/router";
 
 async function setSeisanHyou(input: ShiwakeInput) {
   const endpoint = BASE_URL;
   const tokenObj = localStorage.getItem("token")
-  const auth = JSON.parse(tokenObj)
+  const auth = tokenObj ? JSON.parse(tokenObj) : undefined;
+  if (!tokenObj) Router.push("/signin");
   const client = new GraphQLClient(endpoint, {
     headers:{
       authorization: auth

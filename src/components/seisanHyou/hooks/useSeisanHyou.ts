@@ -32,8 +32,8 @@ async function getSeisanHyou(): Promise<Shiwakes> {
   // const queryKey = queryKeys.useSeisanHyou
   const endpoint = BASE_URL
   const tokenObj = localStorage.getItem("token")
+  const auth = tokenObj?JSON.parse(tokenObj):undefined
   if (!tokenObj) Router.push('/signin')
-  const auth = JSON.parse(tokenObj)
   const client = new GraphQLClient(endpoint, {
     headers:{
       authorization: auth
@@ -62,7 +62,7 @@ async function getSeisanHyou(): Promise<Shiwakes> {
 
 export function useSeisanHyou(): Shiwakes {
   const queryKey = queryKeys.useSeisanHyou
-  const fallback = []
+  const fallback:any = []
   const { data = fallback } = useQuery(queryKey, getSeisanHyou)
   //console.log(data)
   return data
