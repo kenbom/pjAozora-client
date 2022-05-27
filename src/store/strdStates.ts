@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 import { atom } from 'recoil'
 import type { ShiwakeData } from "../components/kamokuMenu/MenuItem"
 
