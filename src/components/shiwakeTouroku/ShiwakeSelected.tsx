@@ -20,6 +20,7 @@ import { ArrowRightIcon } from "@chakra-ui/icons";
 import DatePicker, { CalendarContainer, registerLocale } from "react-datepicker";
 import ja from 'date-fns/locale/ja';
 import dayjs from "dayjs";
+import type {ShiwakeInput} from "./ShiwakeTouroku"
 
 const ShiwakeTourokuSchema = Yup.object().shape({
   kingaku: Yup.string()
@@ -42,17 +43,17 @@ export const ShiwakeSelected = () => {
   const mutateShiwake = useShiwakeTouroku();
   const Today = new Date();
   const [date, setDate] = React.useState(Today);
-  const MyContainer = ({ className, children }) => {
-    return (
-      <div style={{ color: "#fff" }}>
-        <CalendarContainer className={className}>
-          <div style={{ position: "relative" }}>{children}</div>
-        </CalendarContainer>
-      </div>
-    );
-  };
+  // const MyContainer = ({ className, children }) => {
+  //   return (
+  //     <div style={{ color: "#fff" }}>
+  //       <CalendarContainer className={className}>
+  //         <div style={{ position: "relative" }}>{children}</div>
+  //       </CalendarContainer>
+  //     </div>
+  //   );
+  // };
   registerLocale('ja', ja);
-  const shiwakeInput = {
+  const shiwakeInput:any = {
     input: {
       hasseiDate: date.toISOString(),
       tekiyou: tekiyou,
@@ -81,7 +82,7 @@ export const ShiwakeSelected = () => {
               onChange={(selectedDate) => {
                 setDate(selectedDate || Today);
               }}
-              calendarContainer={MyContainer}
+              // calendarContainer={MyContainer}
               monthsShown={2}
               showPreviousMonths
               selected={date}
