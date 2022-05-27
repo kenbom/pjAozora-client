@@ -9,7 +9,8 @@ interface UseCustomToast {
     (options?: UseToastOptions | undefined): string | number | undefined;
     close: (id: ToastId) => void;
     closeAll: (options?: CloseAllToastsOptions | undefined) => void;
-    update(id: ToastId, options): void;
+    // update(id: ToastId, options): void;
+    update(id: ToastId): void;
     isActive: (id: ToastId) => boolean | undefined;
 }
 
