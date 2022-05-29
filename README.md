@@ -2,7 +2,8 @@
 
 ## これは何
 - フリーランサーの皆さんが青色申告をできるだけラクに自力で済ませるためのWebアプリです。
-- まだベータ版ですが入力の簡単さを体験いただくために[公開](https://pj-aozora-client-n0ca7drrn-kenbom.vercel.app/)を始めました。
+- まだベータ版ですが入力の簡単さを体験いただくために一部
+- [公開](https://pj-aozora-client-n0ca7drrn-kenbom.vercel.app/)を始めました。
 - メアド：　soso@uso.com　　パスワード：　password　で使ってみてください　
 
 ## なぜ簡単に使えるのか
