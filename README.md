@@ -14,8 +14,8 @@
 
 ## 利用させていただいたフレームワーク、ライブラリなど
 - バックエンド: Apollo server, Prisma, PostgreSQL ほか
-- フロントエンド: Nextjs, React-query, Graphql-request, Chakra-UI ほか
-- ホスティング: Vercel (Nextjs), Heroku (Apollo server,PostgreSQL)
+- フロントエンド: React,Nextjs, React-query, Graphql-request, Chakra-UI ほか
+- ホスティング: Vercel (Nextjs), Heroku (Apollo server, PostgreSQL)
 - 個人開発を決めた時点で：
   - 出来る限り（いわゆる）モダンなWeb開発技術を使いたい。
   - とはいえ費用発生はできるだけ抑えたい。
