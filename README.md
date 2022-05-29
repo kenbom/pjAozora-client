@@ -14,7 +14,10 @@
 - バックエンド: Apollo server, Prisma, PostgreSQL ほか
 - フロントエンド: Nextjs, React-query, Graphql-request, Chakra-UI ほか
 - ホスティング: Vercel (Nextjs), Heroku (Apollo server,PostgreSQL)
-- アプリ作成を決めた時点で出来る限り（いわゆる）モダンなWeb開発を体感したく上記の選択となりました。
+- 個人開発を決めた時点で：
+  - 出来る限り（いわゆる）モダンなWeb開発技術を使いたい。
+  - とはいえ、費用発生はできるだけ抑えたい。
+  - ということで上記の選択となりました。
 
 ## 今後の実装の課題
 - ベータ版ということで申し訳ありません、損益計算書と貸借対照表がこれからです。
