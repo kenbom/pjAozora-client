@@ -15,7 +15,7 @@
 - 「らくらく！青色申告」を使えば、もう「貸方、借方？」「反対勘定？」なんかに悩む必要はありません。
 
 
-## 利用させていただいたフレームワーク、ライブラリなど
+## 採用させていただいたフレームワーク、ライブラリなど
 - バックエンド: Apollo server, Prisma, PostgreSQL ほか
 - フロントエンド: React,Nextjs, React-query, Graphql-request, Chakra-UI ほか
 - ホスティング: Vercel (Nextjs), Heroku (Apollo server, PostgreSQL)
