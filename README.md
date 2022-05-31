@@ -18,7 +18,7 @@
 ## 採用させていただいたフレームワーク、ライブラリなど
 - バックエンド: [Apollo Server](https://www.apollographql.com/), [Prisma](https://www.prisma.io/), [PostgreSQL](https://www.postgresql.org/) ほか
 - フロントエンド: [React](https://reactjs.org/), [Next.js](https://nextjs.org/), [React-Query](https://react-query.tanstack.com/), [graphql-request](https://www.npmjs.com/package/graphql-request), [Chakra UI](https://chakra-ui.com/) ほか
-- ホスティング: [Vercel](https://vercel.com/)(Nextjs), [Heroku](https://id.heroku.com/)(ApolloServer,PostgreSQL)
+- ホスティング: [Vercel](https://vercel.com/)(Nextjs), [Heroku](https://heroku.com/)(ApolloServer,PostgreSQL)
 - 個人開発を決めた時点で：
   - 出来る限り（いわゆる）モダンなWeb開発技術を使いたい。
   - とはいえ費用発生はできるだけ抑えたい。
