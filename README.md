@@ -17,7 +17,7 @@
 
 ## 採用させていただいたフレームワーク、ライブラリなど
 - バックエンド: [GraphQL](https://graphql.org/), [Apollo Server](https://www.apollographql.com/), [Prisma](https://www.prisma.io/), [PostgreSQL](https://www.postgresql.org/) ほか
-- フロントエンド: [React](https://reactjs.org/), [Next.js](https://nextjs.org/), [React Query](https://react-query.tanstack.com/), [GraphQL](https://graphql.org/), [graphql-request](https://www.npmjs.com/package/graphql-request), [Chakra UI](https://chakra-ui.com/) ほか
+- フロントエンド: [React](https://reactjs.org/), [Next.js](https://nextjs.org/), [React Query](https://react-query.tanstack.com/), GraphQL, [graphql-request](https://www.npmjs.com/package/graphql-request), [Chakra UI](https://chakra-ui.com/) ほか
 - ホスティング: [Vercel](https://vercel.com/)(Next.js搭載), [Heroku](https://devcenter.heroku.com)(Apollo Server,　PostgreSQL搭載)
 - 個人開発を決めた時点で：
   - 出来る限り（いわゆる）モダンなWeb開発技術を使いたい。
