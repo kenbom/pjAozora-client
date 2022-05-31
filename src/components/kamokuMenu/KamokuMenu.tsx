@@ -60,7 +60,7 @@ export const KamokuMenu: VFC<kamokuMenuProps> = (props) => {
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left" fontSize="sm">
-                両建取引
+              減価償却  
               </Box>
               <AccordionIcon />
             </AccordionButton>

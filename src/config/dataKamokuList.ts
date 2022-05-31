@@ -64,11 +64,11 @@ export const kamokuList = [
         "kamokuMenuCd": 514,
         "kamokuMenuMei": "消耗品費"
     },
-    {
-        "kamokuMenuGrpCd": 5,
-        "kamokuMenuCd": 515,
-        "kamokuMenuMei": "減価償却費"
-    },
+    // {
+    //     "kamokuMenuGrpCd": 5,
+    //     "kamokuMenuCd": 515,
+    //     "kamokuMenuMei": "減価償却費"
+    // },
     {
         "kamokuMenuGrpCd": 5,
         "kamokuMenuCd": 516,
@@ -144,76 +144,76 @@ export const kamokuList = [
         "kamokuMenuCd": 403,
         "kamokuMenuMei": "その他収益"
     },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 101,
-        "kamokuMenuMei": "現金"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 102,
-        "kamokuMenuMei": "当座預金"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 103,
-        "kamokuMenuMei": "普通預金"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 104,
-        "kamokuMenuMei": "通知預金"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 105,
-        "kamokuMenuMei": "定期預金"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 106,
-        "kamokuMenuMei": "受取手形"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 107,
-        "kamokuMenuMei": "売掛金"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 108,
-        "kamokuMenuMei": "有価証券"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 109,
-        "kamokuMenuMei": "棚卸資産"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 110,
-        "kamokuMenuMei": "前払金"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 111,
-        "kamokuMenuMei": "貸付金"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 112,
-        "kamokuMenuMei": "未収入金"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 113,
-        "kamokuMenuMei": "仮払源泉税"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 114,
-        "kamokuMenuMei": "その他の資産"
-    },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 101,
+    //     "kamokuMenuMei": "現金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 102,
+    //     "kamokuMenuMei": "当座預金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 103,
+    //     "kamokuMenuMei": "普通預金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 104,
+    //     "kamokuMenuMei": "通知預金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 105,
+    //     "kamokuMenuMei": "定期預金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 106,
+    //     "kamokuMenuMei": "受取手形"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 107,
+    //     "kamokuMenuMei": "売掛金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 108,
+    //     "kamokuMenuMei": "有価証券"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 109,
+    //     "kamokuMenuMei": "棚卸資産"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 110,
+    //     "kamokuMenuMei": "前払金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 111,
+    //     "kamokuMenuMei": "貸付金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 112,
+    //     "kamokuMenuMei": "未収入金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 113,
+    //     "kamokuMenuMei": "仮払源泉税"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 114,
+    //     "kamokuMenuMei": "その他の資産"
+    // },
     {
         "kamokuMenuGrpCd": 1,
         "kamokuMenuCd": 121,
@@ -239,66 +239,66 @@ export const kamokuList = [
         "kamokuMenuCd": 125,
         "kamokuMenuMei": "工具器具備品"
     },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 126,
-        "kamokuMenuMei": "土地"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 127,
-        "kamokuMenuMei": "敷金保証金"
-    },
-    {
-        "kamokuMenuGrpCd": 1,
-        "kamokuMenuCd": 128,
-        "kamokuMenuMei": "その他投資"
-    },
-    {
-        "kamokuMenuGrpCd": 2,
-        "kamokuMenuCd": 201,
-        "kamokuMenuMei": "支払手形"
-    },
-    {
-        "kamokuMenuGrpCd": 2,
-        "kamokuMenuCd": 202,
-        "kamokuMenuMei": "買掛金"
-    },
-    {
-        "kamokuMenuGrpCd": 2,
-        "kamokuMenuCd": 203,
-        "kamokuMenuMei": "借入金"
-    },
-    {
-        "kamokuMenuGrpCd": 2,
-        "kamokuMenuCd": 204,
-        "kamokuMenuMei": "未払金"
-    },
-    {
-        "kamokuMenuGrpCd": 2,
-        "kamokuMenuCd": 205,
-        "kamokuMenuMei": "前受金"
-    },
-    {
-        "kamokuMenuGrpCd": 2,
-        "kamokuMenuCd": 206,
-        "kamokuMenuMei": "預り金"
-    },
-    {
-        "kamokuMenuGrpCd": 2,
-        "kamokuMenuCd": 207,
-        "kamokuMenuMei": "貸倒引当金"
-    },
-    {
-        "kamokuMenuGrpCd": 2,
-        "kamokuMenuCd": 208,
-        "kamokuMenuMei": "その他負債"
-    },
-    {
-        "kamokuMenuGrpCd": 2,
-        "kamokuMenuCd": 209,
-        "kamokuMenuMei": "共有者持分"
-    },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 126,
+    //     "kamokuMenuMei": "土地"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 127,
+    //     "kamokuMenuMei": "敷金保証金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 1,
+    //     "kamokuMenuCd": 128,
+    //     "kamokuMenuMei": "その他投資"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 2,
+    //     "kamokuMenuCd": 201,
+    //     "kamokuMenuMei": "支払手形"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 2,
+    //     "kamokuMenuCd": 202,
+    //     "kamokuMenuMei": "買掛金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 2,
+    //     "kamokuMenuCd": 203,
+    //     "kamokuMenuMei": "借入金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 2,
+    //     "kamokuMenuCd": 204,
+    //     "kamokuMenuMei": "未払金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 2,
+    //     "kamokuMenuCd": 205,
+    //     "kamokuMenuMei": "前受金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 2,
+    //     "kamokuMenuCd": 206,
+    //     "kamokuMenuMei": "預り金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 2,
+    //     "kamokuMenuCd": 207,
+    //     "kamokuMenuMei": "貸倒引当金"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 2,
+    //     "kamokuMenuCd": 208,
+    //     "kamokuMenuMei": "その他負債"
+    // },
+    // {
+    //     "kamokuMenuGrpCd": 2,
+    //     "kamokuMenuCd": 209,
+    //     "kamokuMenuMei": "共有者持分"
+    // },
     {
         "kamokuMenuGrpCd": 3,
         "kamokuMenuCd": 301,

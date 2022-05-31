@@ -59,12 +59,12 @@ function getPreShiwakeData(kamokuItem: KamokuMenuItem): ShiwakeData {
     };
   else if (kamokuMenuGrpCd === 1)
     return {
-      kariKamokuGrpCd: 0,
-      kariKamokuCd: 0,
-      kariKamokuMei: "未定",
-      kashiKamokuGrpCd: 0,
-      kashiKamokuCd: 0,
-      kashiKamokuMei: "未定",
+      kariKamokuGrpCd: 5,
+      kariKamokuCd: 515,
+      kariKamokuMei: "減価償却",
+      kashiKamokuGrpCd: kamokuMenuGrpCd,
+      kashiKamokuCd: kamokuMenuCd,
+      kashiKamokuMei: kamokuMenuMei,
       hyoujiPtn: "B",
     };
     return {
