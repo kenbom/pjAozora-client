@@ -9,23 +9,22 @@ export function Loading(): ReactElement {
   const display = isFetching || isMutating ? "inherit" : "none";
 
   return (
-    <Box>
+    // <Box>
       <Spinner
         thickness="4px"
         speed="0.65s"
-        emptyColor="olive.200"
-        color="olive.800"
+        emptyColor="gray.200"
+        color="gray.600"
         role="status"
         position="fixed"
-        zIndex="9995"
-        top="50%"
-        left="50%"
+        zIndex="9990"
+        top="450px"
+        left="550px"
         transform="translate(-50%, -50%)"
         display={display}
       >
-        <Text display={display}>Loading...</Text>
+        <Text display="inherit" fontWeight="black" color="gray.600">Loading...</Text>
       </Spinner>
-      {/* <Text zIndex="9999" position="fixed">TestText</Text> */}
-    </Box>
+    // </Box>
   );
 }

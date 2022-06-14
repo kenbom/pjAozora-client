@@ -26,8 +26,8 @@
 
 ## 今後の実装の課題
 - ベータ版ということで申し訳ありません、損益計算書と貸借対照表がこれからです。
-- これらは日々の仕訳の集計という重い処理なのでバックエンドでの実装になります。
-- BEFFEという役割のApollo Serverではいささか荷が重く、[Nestjs](https://nestjs.com)の採用を考えています。
+- これらは日々の仕訳の集計という重い処理なのでDBを含めたバックエンドでの実装になります。
+- BFFという役割のApollo Serverではいささか荷が重く、[Nestjs](https://nestjs.com)の採用を考えています。
 - あと認証が現在の実装では素朴すぎて正式公開にはちょっと無理、でしょう。
 - 現時点ではJWTをApollo Serverで発行、localstorageにしまっています。
 - ここは[Auth0](https://auth0.com)か、[NextAuth](https://next-auth.js.org)を候補として思案中です。

@@ -62,25 +62,25 @@ export const Signin: VFC = () => {
                   <InputControl name="email" label="メールアドレス" mb={7} />
                   <InputControl name="password" label="パスワード" mb={5} />
                   <Flex>
-                    <SubmitButton
-                      mt={4}
-                      h={12}
-                      colorScheme="gray"
-                      type="submit"
-                    >
-                      Signin
-                    </SubmitButton>
-                    <Spacer />
                     <ResetButton
                       mt={4}
-                      h={10}
-                      pt={6}
-                      pb={6} 
+                      h={12}
                       colorScheme="gray"
                       type="reset"
                     >
                       Reset
                     </ResetButton>
+                    <Spacer />
+                    <SubmitButton
+                      mt={4}
+                      h={10}
+                      pt={6}
+                      pb={6} 
+                      colorScheme="gray"
+                      type="submit"
+                    >
+                      Signin
+                    </SubmitButton>
                   </Flex>
                 </Form>
               )}
