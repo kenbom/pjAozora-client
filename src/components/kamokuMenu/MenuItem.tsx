@@ -1,12 +1,10 @@
 import React, { VFC } from "react";
 import { kamokuList } from "../../config/dataKamokuList";
 import {
-  strdGrpCd,
-  strdMenuItem,
   strdShiwakeData,
 } from "../../store/strdStates";
 import { useRecoilState, useSetRecoilState } from "recoil";
-import { Box, Grid, GridItem } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 export type KamokuMenuItem = {
   kamokuMenuGrpCd: number;
@@ -67,26 +65,23 @@ function getPreShiwakeData(kamokuItem: KamokuMenuItem): ShiwakeData {
       kashiKamokuMei: kamokuMenuMei,
       hyoujiPtn: "B",
     };
-    return {
-      kariKamokuGrpCd: 0,
-      kariKamokuCd: 0,
-      kariKamokuMei: "未定",
-      kashiKamokuGrpCd: 0,
-      kashiKamokuCd: 0,
-      kashiKamokuMei: "未定",
-      hyoujiPtn: "U",
-    };
-
+  return {
+    kariKamokuGrpCd: 0,
+    kariKamokuCd: 0,
+    kariKamokuMei: "未定",
+    kashiKamokuGrpCd: 0,
+    kashiKamokuCd: 0,
+    kashiKamokuMei: "未定",
+    hyoujiPtn: "U",
+  };
 }
 
 export const MenuItem: VFC<KamokuProps> = (props) => {
   const kamokuMenuItems: KamokuMenuItem[] = kamokuList;
   const { kamokuMenuGrpCd } = props;
   const selectedKamokus = selectKamokuGrp(kamokuMenuGrpCd, kamokuMenuItems);
-  const [changedGrpCd, setChangedGrpCd] = useRecoilState(strdGrpCd);
-  const setChangedMenuItem = useSetRecoilState(strdMenuItem);
   const setPreShiwakeData = useSetRecoilState(strdShiwakeData);
-  
+
   function handleOnClick(kamokuItem: KamokuMenuItem): void {
     const preShiwakeData = getPreShiwakeData(kamokuItem);
     setPreShiwakeData(preShiwakeData);

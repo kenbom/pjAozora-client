@@ -1,18 +1,13 @@
 import React, { ReactElement, VFC } from "react";
 import { Box } from "@chakra-ui/layout";
 import { useSeisanHyou } from "./hooks/useSeisanHyou";
-import { request, gql } from "graphql-request";
-import { BASE_URL } from "../../config/constants";
-import { Item } from "framer-motion/types/components/Reorder/Item";
 import {
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
-  TableCaption,
   TableContainer,
   Button,
 } from "@chakra-ui/react";
@@ -21,30 +16,25 @@ import "dayjs/locale/ja";
 import { useShiwakeSakujo } from "./hooks/useShiwakeSakujo";
 
 import type { Shiwake } from "./hooks/useSeisanHyou";
-import type { Shiwakes } from "./hooks/useSeisanHyou";
-
 interface SeisanHyouType {
   name: String;
 }
 
 export const SeisanHyou: VFC<SeisanHyouType> = (props) => {
   const shiwakesData = useSeisanHyou();
-  // const dataArray:Shiwake[] = shiwakesData
-  function testTime(stamp:number):string{
+  function testTime(stamp: number): string {
     const newStamp = dayjs(new Date(Math.round(stamp))).format("YYYY/MM/DD");
-    const newNewStamp = JSON.stringify(newStamp).substr(1,10)
-    return newNewStamp
+    const newNewStamp = JSON.stringify(newStamp).substr(1, 10);
+    return newNewStamp;
   }
-  const deleteShiwake = useShiwakeSakujo()
-  function shiwakeSet(shiwakeId:number){
-    // const stringfiedId = String(63)
-    const objShiwakeId = {"input":{"shiwakeId":String(shiwakeId)}}
-    console.log(`checkIdOya:${JSON.stringify(objShiwakeId)}`)
-    deleteShiwake(objShiwakeId)
+  const deleteShiwake = useShiwakeSakujo();
+  function shiwakeSet(shiwakeId: number) {
+    const objShiwakeId = { input: { shiwakeId: String(shiwakeId) } };
+    console.log(`checkIdOya:${JSON.stringify(objShiwakeId)}`);
+    deleteShiwake(objShiwakeId);
   }
   return (
     <Box
-      //m={4}
       height="525px"
       width="100%"
       border="1px"
@@ -55,7 +45,6 @@ export const SeisanHyou: VFC<SeisanHyouType> = (props) => {
       overflow="scroll"
     >
       {props.name}
-      {/* {JSON.stringify(dataArray, undefined, 2)} */}
       <TableContainer>
         <Table variant="simple" fontSize="xs" size="sm" colorScheme="twitter">
           <Thead fontSize="xs">
@@ -79,7 +68,14 @@ export const SeisanHyou: VFC<SeisanHyouType> = (props) => {
                     {shiwakeItem.kariKingaku}
                   </Td>
                   <Td fontSize="xs">{shiwakeItem.tekiyou}</Td>
-                  <Td><Button onClick={() => shiwakeSet(shiwakeItem.id)} fontSize="xs">削除</Button></Td>
+                  <Td>
+                    <Button
+                      onClick={() => shiwakeSet(shiwakeItem.id)}
+                      fontSize="xs"
+                    >
+                      削除
+                    </Button>
+                  </Td>
                 </Tr>
               );
             })}

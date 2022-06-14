@@ -1,26 +1,18 @@
 import React, { VFC, useState } from "react";
-import {
-  Box,
-  HStack,
-  VStack,
-  Center,
-  Flex,
-} from "@chakra-ui/react";
+import { Box, HStack, VStack, Center, Flex } from "@chakra-ui/react";
 import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
-import { strdGrpCd, strdTekiyou } from "../../store/strdStates";
 import { strdShiwakeData } from "../../store/strdStates";
 import { Grid, GridItem } from "@chakra-ui/react";
 import { Formik, Form, Field, useFormik } from "formik";
 import * as Yup from "yup";
 import { InputControl, SubmitButton } from "formik-chakra-ui";
 import { useShiwakeTouroku } from "./hooks/useShiwakeTouroku";
-import { useSeisanHyou } from "../seisanHyou/hooks/useSeisanHyou";
-import { ValuesOfCorrectTypeRule } from "graphql";
 import { ArrowRightIcon } from "@chakra-ui/icons";
-import DatePicker, { CalendarContainer, registerLocale } from "react-datepicker";
-import ja from 'date-fns/locale/ja';
-import dayjs from "dayjs";
-import type {ShiwakeInput} from "./ShiwakeTouroku"
+import DatePicker, {
+  CalendarContainer,
+  registerLocale,
+} from "react-datepicker";
+import ja from "date-fns/locale/ja";
 
 const ShiwakeTourokuSchema = Yup.object().shape({
   kingaku: Yup.string()
@@ -43,17 +35,8 @@ export const ShiwakeSelected = () => {
   const mutateShiwake = useShiwakeTouroku();
   const Today = new Date();
   const [date, setDate] = React.useState(Today);
-  // const MyContainer = ({ className, children }) => {
-  //   return (
-  //     <div style={{ color: "#fff" }}>
-  //       <CalendarContainer className={className}>
-  //         <div style={{ position: "relative" }}>{children}</div>
-  //       </CalendarContainer>
-  //     </div>
-  //   );
-  // };
-  registerLocale('ja', ja);
-  const shiwakeInput:any = {
+  registerLocale("ja", ja);
+  const shiwakeInput: any = {
     input: {
       hasseiDate: date.toISOString(),
       tekiyou: tekiyou,
@@ -67,10 +50,7 @@ export const ShiwakeSelected = () => {
   };
   return (
     <>
-      <GridItem
-        rowSpan={1}
-        colSpan={2}
-      >
+      <GridItem rowSpan={1} colSpan={2}>
         <Flex>
           <Box color="gray.400" marginRight="15px" marginLeft="55px">
             日付を選択してください
@@ -82,13 +62,11 @@ export const ShiwakeSelected = () => {
               onChange={(selectedDate) => {
                 setDate(selectedDate || Today);
               }}
-              // calendarContainer={MyContainer}
               monthsShown={2}
               showPreviousMonths
               selected={date}
-              locale='ja'>
-
-            </DatePicker>
+              locale="ja"
+            ></DatePicker>
           </Box>
         </Flex>
       </GridItem>
@@ -130,7 +108,7 @@ export const ShiwakeSelected = () => {
                       inputProps={{
                         placeholder: "金額を入力してください",
                         color: "gray.800",
-                        fontSize: "sm"
+                        fontSize: "sm",
                       }}
                       w="100%"
                       onChange={changeKingaku}
@@ -159,7 +137,7 @@ export const ShiwakeSelected = () => {
                       inputProps={{
                         placeholder: "取引メモが入力できます",
                         color: "gray.800",
-                        fontSize: "sm"
+                        fontSize: "sm",
                       }}
                       w="100%"
                       colorScheme="gray"

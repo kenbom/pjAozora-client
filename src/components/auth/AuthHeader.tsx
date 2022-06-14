@@ -1,5 +1,5 @@
-import React from 'react'
-import {Box} from '@chakra-ui/react'
+import React from "react";
+import { Box } from "@chakra-ui/react";
 
 export const AuthHeader = () => {
   return (
@@ -7,4 +7,4 @@ export const AuthHeader = () => {
       らくらく！青色申告
     </Box>
   );
-}
+};

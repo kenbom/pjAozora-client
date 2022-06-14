@@ -1,23 +1,16 @@
 import React, { useState } from 'react'
-import { Box } from '@chakra-ui/react'
 import { GraphQLClient, request, gql } from "graphql-request";
 import { BASE_URL } from "../../../config/constants";
-import { animationControls } from 'framer-motion';
 import { UseMutateFunction, useQuery, useQueryClient } from "react-query"
 import { queryKeys } from "../../../config/queryKeys"
 import Router from 'next/router';
-// import type { QueryObserverIdleResul } from "react-query"
 
-// interface Shiwakes {
-//   shiwakes: MiniShiwake[]
-// }
-
-export type Shiwakes={
-shiwakes:Shiwake[]
+export type Shiwakes = {
+  shiwakes: Shiwake[]
 }
 
 export type Shiwake = {
-  id:number
+  id: number
   createdAt: number
   hasseiDate: number
   kariName: string
@@ -26,16 +19,13 @@ export type Shiwake = {
   tekiyou: string
 }
 
-// const queryKey = queryKeys.useSeisanHyou
-
 async function getSeisanHyou(): Promise<Shiwakes> {
-  // const queryKey = queryKeys.useSeisanHyou
   const endpoint = BASE_URL
   const tokenObj = localStorage.getItem("token")
-  const auth = tokenObj?JSON.parse(tokenObj):undefined
+  const auth = tokenObj ? JSON.parse(tokenObj) : undefined
   if (!tokenObj) Router.push('/signin')
   const client = new GraphQLClient(endpoint, {
-    headers:{
+    headers: {
       authorization: auth
     }
   })
@@ -54,17 +44,14 @@ async function getSeisanHyou(): Promise<Shiwakes> {
      }
      `
   const data = await client.request(query)
-  // if (!data) Router.push('/signin')
   console.log(`atUseSeisanHyou:${JSON.stringify(data, undefined, 2)}`)
-  // if(!data) return
   return data
 }
 
 export function useSeisanHyou(): Shiwakes {
   const queryKey = queryKeys.useSeisanHyou
-  const fallback:any = []
+  const fallback: any = []
   const { data = fallback } = useQuery(queryKey, getSeisanHyou)
-  //console.log(data)
   return data
 
 }
