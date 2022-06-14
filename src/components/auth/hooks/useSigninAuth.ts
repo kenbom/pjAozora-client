@@ -4,9 +4,7 @@ import { GraphQLClient, request, gql } from "graphql-request";
 import { BASE_URL } from "../../../config/constants";
 import { useCustomToast } from '../../app/hooks/useCustomToast';
 import { queryKeys } from "../../../config/queryKeys"
-import { redirect } from 'next/dist/server/api-utils';
 import Router from 'next/router';
-import { NextPage } from 'next'
 
 type SigninArgs = {
     credentials: {
@@ -16,7 +14,6 @@ type SigninArgs = {
 }
 
 async function setSignin(credentials: SigninArgs) {
-    // localStorage.clear()
     const endpoint = BASE_URL
     const client = new GraphQLClient(endpoint)
 
@@ -27,13 +24,9 @@ async function setSignin(credentials: SigninArgs) {
             }
         }
     `
-    // await localStorage.clear()
     const serverToken = await client.request(mutation, credentials)
-    // const isLoginSuccess = serverToken?true:false
     const lclStrg = await JSON.stringify(serverToken.signin.token)
     await localStorage.setItem("token", lclStrg)
-
-    // return isLoginSuccess
 }
 
 export function useSigninAuth(): UseMutateFunction<
