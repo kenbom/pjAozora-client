@@ -4,6 +4,7 @@ import { ShiwakeTouroku } from "../components/shiwakeTouroku/ShiwakeTouroku";
 import { KamokuMenu } from "../components/kamokuMenu/KamokuMenu";
 import { SeisanHyou } from "../components/seisanHyou/SeisanHyou";
 import { Header } from "../components/header/Header";
+import { TanSeisanHyou } from "../components/seisanHyou/TanSeisanHyou";
 
 const Home: NextPage = () => {
   return (
@@ -24,7 +25,8 @@ const Home: NextPage = () => {
             <ShiwakeTouroku name="取引登録"></ShiwakeTouroku>
           </GridItem>
           <GridItem rowSpan={6} colSpan={6}>
-            <SeisanHyou name="取引履歴"></SeisanHyou>
+            <TanSeisanHyou name="取引履歴"></TanSeisanHyou>
+            {/* <SeisanHyou name="取引履歴"></SeisanHyou> */}
           </GridItem>
         </Grid>
       </Box>

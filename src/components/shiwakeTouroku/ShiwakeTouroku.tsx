@@ -35,33 +35,35 @@ export const ShiwakeTouroku: VFC<shiwakeTourokuProps> = (props) => {
   });
   return (
     <div>
-      <Box
-        h="220px"
-        w="100%"
-        border="1px"
-        rounded="2xl"
-        color="gray.700"
-        fontSize="sm"
-        textAlign="center"
-      >
-        {props.name}
-
-        <Grid
-          h="200px"
+      {/* <GridItem rowSpan={3} colSpan={6}> */}
+        <Box
+          h="220px"
           w="100%"
-          templateRows="repeat(4, 1fr)"
-          templateColumns="repeat(2, 1fr)"
-          gap={0.5}
+          border="1px"
+          rounded="2xl"
+          color="gray.700"
+          fontSize="sm"
+          textAlign="center"
         >
-          <GridItem rowSpan={2} colSpan={2}>
-            {atomShiwakeData.hyoujiPtn === "U" ? (
-              <ShiwakeUnselected />
-            ) : (
-              <ShiwakeSelected />
-            )}
-          </GridItem>
-        </Grid>
-      </Box>
+          {props.name}
+
+          <Grid
+            h="200px"
+            w="100%"
+            templateRows="repeat(4, 1fr)"
+            templateColumns="repeat(2, 1fr)"
+            gap={0.5}
+          >
+            <GridItem rowSpan={2} colSpan={2}>
+              {atomShiwakeData.hyoujiPtn === "U" ? (
+                <ShiwakeUnselected />
+              ) : (
+                <ShiwakeSelected />
+              )}
+            </GridItem>
+          </Grid>
+        </Box>
+      {/* </GridItem> */}
     </div>
   );
 };
