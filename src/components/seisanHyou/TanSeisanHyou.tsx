@@ -1,5 +1,4 @@
 import React, { ReactElement, VFC } from "react";
-// import '../../../styles/index.css'
 import { Box } from "@chakra-ui/layout";
 import { useSeisanHyou } from "./hooks/useSeisanHyou";
 import {
@@ -20,6 +19,7 @@ import {
   ColumnDef,
   flexRender,
 } from "@tanstack/react-table";
+import styles from './Table.module.css'
 
 import dayjs from "dayjs";
 import "dayjs/locale/ja";
@@ -163,9 +163,10 @@ export const TanSeisanHyou: VFC<SeisanHyouType> = (props) => {
           </Tbody>
         </Table>
       </TableContainer>
-
+{/* ////////////////////////////////////////////////////////////////////////////////// */}
+<Box m={4}>
       <table>
-        <thead>
+        <thead className={styles.headerColor}>
           {table.getHeaderGroups().map((headers) => (
             <tr key={headers.id}>
               {headers.headers.map((header) => (
@@ -195,6 +196,8 @@ export const TanSeisanHyou: VFC<SeisanHyouType> = (props) => {
           ))}
         </tbody>
       </table>
+      </Box>
+      {/* ////////////////////////////////////////////////////////////////////////////////// */}
     </Box>
   );
 };
